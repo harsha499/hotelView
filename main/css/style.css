@@ -188,7 +188,7 @@ html {
 
 .container {
   background-color: white;
-  max-width: 84%;
+  width: 112rem;
   margin: 10rem auto;
   height: 150%;
   box-shadow: 1rem 1rem 6rem black; }
