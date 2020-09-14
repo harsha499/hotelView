@@ -1,0 +1,29 @@
+*{
+    padding:0;
+    margin:0;
+}
+:root{
+    --pink:#f22246;
+    --lightred:#ff1053;
+    --grey:grey;
+}
+body{
+    background-color:li();
+    box-sizing: border-box;
+    background-image: linear-gradient(to right bottom,var(--pink),var(--lightred));
+    background-size: cover;
+    color:var(--grey);
+    height: 100vh;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62%;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+
+    
+}
+*::after,::before{
+    box-sizing: border-box;;
+}

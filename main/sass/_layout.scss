@@ -1,0 +1,207 @@
+.container{
+background-color: white;
+width: 84%;
+margin: 10rem auto;
+height: 150%;
+box-shadow: 1rem 1rem 6rem black;
+}
+.header{
+    background-color: #04d6c800;
+}
+.content{
+    display: flex;
+    height: 95%;
+}
+
+.hotelview{
+    background-color:white;
+    flex: 1 1 75%;
+}
+.logo{
+    height: 3rem;
+    padding: 2px;
+    margin: 2rem;
+    // background-color: grey;
+}
+.buttons{
+    width: 6%;
+    transform: translateX(-32px) translateY(9px);
+    border-radius: .6rem;
+    background-color: lightgray;
+    border: none;
+    
+    outline: none;
+}
+.icon-search{
+    height: 3rem;
+    width: 50%;
+    fill: grey;
+}
+.header{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex : 0 1;
+}
+.svcbookmarks{
+    height: 2.5rem;
+    width: 2.5rem;
+  
+}
+.bookmarks{
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all .5s;
+    &>span{
+        background-color: #ff0000c2;
+        border-radius: 135rem;
+        width: 38%;
+        position: absolute;
+        left: 23px;
+        top: 32px;
+        color: black;
+        text-align: center;
+    }
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  
+    padding-right: 3px;
+    font-size: 13px; 
+    transition: all .5s;
+}
+.chat{
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all .5s;
+    &>span{
+        background-color: #ff0000c2;
+        border-radius: 26rem;
+        width: 50%;
+        position: absolute;
+        left: 22px;
+        top: 34px;
+        color: black;   
+    }
+}
+.chat:hover {
+    span{
+        background-color: #ff0000c2;
+        border-radius: 26rem;
+        width: 27%;
+        position: absolute;
+        left: 39px;
+        top: 34px;
+        color: black;  
+    }
+}
+.svcchat{
+    height: 2.5rem;
+    width: 2.5rem;
+   
+}
+.imgs_user{
+   
+    border-radius: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding-right:6px;
+}
+.forms{
+    //   background-color: red;
+}
+.inputs{
+    border-radius: 1rem;
+    width: 80%;
+    height: 36px;
+    background-color: lightgray;
+    border: none;
+    transition: all .7s;
+}
+.inputs:focus{
+    width: 87%;
+    outline: none;
+}
+[placeholder*='search'] {
+    padding: 0 0 0 3rem;
+}
+.navs{
+    // background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 21rem;
+    flex-wrap: wrap;
+    align-self: stretch;
+    &>div:hover{
+        cursor: pointer;
+        background-color: #dcbdbbb8;
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-grow: .5;
+    }
+}
+.bookmarks:hover {
+    span{
+        background-color: #ff0000c2;
+        border-radius: 118rem;
+        width: 25%;
+        position: absolute;
+        left: 41px;
+        top: 32px;
+        color: black;
+        text-align: center;
+    }
+}
+@mixin mediaquery($width)
+{
+    @if($width==600px)
+    {
+        @media  only screen and (max-width : $width)
+        {
+            @content;
+        }
+    }
+    @if($width==900px)
+    {
+        @media  only screen and (max-width : $width)
+        {
+            @content;
+        }
+    }
+    @if($width==1200px)
+    {
+        @media  only screen and (max-width : $width)
+        {
+            @content;
+        }
+    }
+    
+   
+}
+@include mediaquery(1200px)
+{
+  
+}
+@include mediaquery(900px)
+{
+    .forms{
+        order: 1;
+    }
+}
+@include mediaquery(600px)
+{
+    .forms{
+        order: 1;
+    }
+}
+
