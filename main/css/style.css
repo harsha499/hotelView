@@ -133,13 +133,14 @@ html {
   transform: scale(0);
   width: 2px;
   height: 100%;
-  transition: all .8s; }
+  transition: all .8s;
+  left: -29px; }
 
 .navigation a:hover::before {
   content: "";
   position: absolute;
   transform: scale(1);
-  width: 100%;
+  width: 124%;
   height: 100%;
   background-color: red;
   transform-origin: left; }
